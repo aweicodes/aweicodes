@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    background: #999;
+}
+.container{
+    height: 40px;
+    width: 1226px;
+    background: #333;
+    margin: 0 auto;
+}
+.drop-down{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    padding: 0 20px;
+    color: #fff;
+    line-height: 40px;
+    font-weight: bold;
+    background: red;
+}
+.drop-box{
+    width: 120px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    height: 0;
+    opacity: 0;
+    color: #999;
+    overflow: hidden;
+    transition: .5s;
+    padding: 0 20px;
+}
+.drop-down:hover .drop-box{
+    height: 300px;
+    opacity: 1;
+}
+.drop-item{
+    height: 40px;
+    position:relative;
+}
